@@ -1,2 +1,80 @@
 body {
-  background-color: blue; }
+  background-color: #f2f2f2;
+  font-family: 'Roboto', sans-serif; }
+
+header {
+  background-color: #3F51B5;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  padding: 16px 50px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26); }
+  header h1 {
+    color: white;
+    margin: 0px 50px 0px 0px;
+    font-weight: 500; }
+    header h1 span {
+      font-weight: 300; }
+  header input {
+    -ms-flex-positive: 1;
+        flex-grow: 1;
+    padding: 4px 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: #5C6BC0;
+    max-width: 900px;
+    transition: background-color 0.2s ease-in-out; }
+    header input::-webkit-input-placeholder {
+      color: rgba(255, 255, 255, 0.8); }
+    header input::-moz-placeholder {
+      color: rgba(255, 255, 255, 0.8); }
+    header input:-ms-input-placeholder {
+      color: rgba(255, 255, 255, 0.8); }
+    header input::placeholder {
+      color: rgba(255, 255, 255, 0.8); }
+    header input:focus {
+      background-color: rgba(255, 255, 255, 0.95);
+      outline: none;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+      color: rgba(0, 0, 0, 0.87); }
+      header input:focus::-webkit-input-placeholder {
+        color: rgba(0, 0, 0, 0.8); }
+      header input:focus::-moz-placeholder {
+        color: rgba(0, 0, 0, 0.8); }
+      header input:focus:-ms-input-placeholder {
+        color: rgba(0, 0, 0, 0.8); }
+      header input:focus::placeholder {
+        color: rgba(0, 0, 0, 0.8); }
+
+#add-input {
+  margin-top: 50px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center; }
+  #add-input form {
+    background: rgba(255, 255, 255, 0.9);
+    width: 600px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+    border-radius: 4px; }
+  #add-input input {
+    border: none;
+    padding: 15px 30px;
+    -ms-flex-positive: 1;
+        flex-grow: 1;
+    color: rgba(0, 0, 0, 0.87); }
+    #add-input input:focus {
+      outline: none; }
+  #add-input button {
+    background: none;
+    border: none;
+    border-left: 1px solid #e5e5e5;
+    padding: 15px 15px 15px 15px;
+    color: rgba(0, 0, 0, 0.87); }

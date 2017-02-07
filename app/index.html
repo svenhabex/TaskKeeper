@@ -5,11 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>TaskKeeper</title>
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
 </head>
 <body>
-  <h1>TaskKeeper</h1>
-  <p>Keep your tasks organized right here! Jazeker jongeuh!</p>
+  <header>
+    <h1>Task<span>Keeper</span></h1>
+    <input type="text" name="search" placeholder="Search">
+  </header>
+  <div id="add-input">
+    <form>
+      <input type="text" name="add" placeholder="Create a task" id="add">
+      <button>Add</button>
+    </form>    
+  </div>
+
 
   <!-- Load main javascript file -->
 	<script src="js/main.min.js"></script>

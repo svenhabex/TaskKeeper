@@ -77,7 +77,14 @@ header {
     border: none;
     border-left: 1px solid #e5e5e5;
     padding: 15px 15px 15px 15px;
-    color: rgba(0, 0, 0, 0.87); }
+    color: rgba(0, 0, 0, 0.87);
+    transition: background-color 0.2s ease-in-out;
+    border-radius: 0px 4px 4px 0px; }
+    #add-input button:hover {
+      cursor: pointer;
+      background-color: #ededed; }
+    #add-input button:focus {
+      outline: none; }
 
 .container {
   margin-top: 50px;
@@ -96,8 +103,21 @@ header {
     list-style-type: none; }
     .container .tasks .task {
       width: 200px;
-      height: 100px;
       background: rgba(255, 255, 255, 0.9);
       border-radius: 4px;
       margin: 10px;
-      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+      color: rgba(0, 0, 0, 0.87);
+      padding: 15px 20px;
+      position: relative; }
+      .container .tasks .task span {
+        position: absolute;
+        right: 0px;
+        top: 1px;
+        transform: scale(0.8); }
+        .container .tasks .task span .x {
+          fill: rgba(0, 0, 0, 0.2); }
+        .container .tasks .task span:hover {
+          cursor: pointer; }
+        .container .tasks .task span:hover .x {
+          fill: rgba(0, 0, 0, 0.8); }

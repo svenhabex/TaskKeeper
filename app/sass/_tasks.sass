@@ -12,8 +12,25 @@
 
     .task
       width: 200px
-      height: 100px
       background: rgba(255,255,255,0.9)
       border-radius: 4px
       margin: 10px
       box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)
+      color: $black-text
+      padding: 15px 20px
+      position: relative
+
+      span
+        position: absolute
+        right: 0px
+        top: 1px
+        transform: scale(0.8)
+
+        .x
+          fill: rgba(0,0,0,.2)
+
+        &:hover
+          cursor: pointer
+
+        &:hover .x
+          fill: rgba(0,0,0,.8)

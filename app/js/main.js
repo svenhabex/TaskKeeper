@@ -74,6 +74,7 @@ let Tasks = (function(){
     }
   });
   search.addEventListener("keyup", searchTask);
+  search.addEventListener("change", searchTask);
 
 
   _render();

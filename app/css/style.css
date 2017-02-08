@@ -69,7 +69,8 @@ header {
     padding: 15px 30px;
     -ms-flex-positive: 1;
         flex-grow: 1;
-    color: rgba(0, 0, 0, 0.87); }
+    color: rgba(0, 0, 0, 0.87);
+    border-radius: 4px 0px 0px 4px; }
     #add-input input:focus {
       outline: none; }
   #add-input button {

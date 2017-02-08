@@ -58,6 +58,7 @@ let Tasks = (function(){
   const addButton = addForm.querySelector("button");
   const addInput = addForm.querySelector("#add");
   const taskList = document.querySelector(".tasks");
+  const search = document.querySelector('[name="search"]');
 
   //bindEvents
   addButton.addEventListener("click", addTask);
@@ -72,6 +73,8 @@ let Tasks = (function(){
       deleteTask(e);
     }
   });
+  search.addEventListener("keyup", searchTask);
+
 
   _render();
 
@@ -92,6 +95,18 @@ let Tasks = (function(){
     let remove = e.target.closest(".task").dataset.id;
     tasks.splice(remove, 1);
     _render();
+  }
+
+  function searchTask(e){
+    let tasksArr = Array.from(document.querySelectorAll(".task"));
+    const regex = new RegExp(this.value, "gi");
+    for (let i = 0; i < tasksArr.length; i++) {
+      if (tasksArr[i].textContent.match(regex)) {
+          tasksArr[i].style.display = "";
+      } else {
+          tasksArr[i].style.display = "none";
+      }
+    }
   }
 
   return{
